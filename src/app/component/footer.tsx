@@ -22,9 +22,6 @@ export function Footer(){
                         <li>
                             <a href="https://t.me/qualsu" target="_blank" className="hover:underline me-4 md:me-6">Telegram</a>
                         </li>
-                        <li>
-                            <a href="https://vk.com/qualsu" target="_blank" className="hover:underline md:me-6">VK</a>
-                        </li>
                     </ul>
                 </div>
                 <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />

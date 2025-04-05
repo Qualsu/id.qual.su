@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: Multiround;
-  src: url(./fonts/MultiroundPro.otf);
+  src: url(../../fonts/MultiroundPro.otf);
 }
 
 body {
   background-color: #221621;
   font-family: Multiround;
-  font-weight: 300;
+  user-select: none;
 }
 
 .cl-internal-1hp5nqm,
