@@ -1,4 +1,6 @@
+import { pages } from "@/config/routing/pages.route";
 import { SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 
 export function User(){
     return (
@@ -6,7 +8,7 @@ export function User(){
             <UserButton/>
             <SignedOut>
                 <SignInButton>
-                    <a className="text-white hover:cursor-pointer hover:text-gray-300 active:font-xs" href="/auth/sign-in">Войти</a>
+                    <Link className="text-white hover:cursor-pointer hover:text-gray-300 active:font-xs" href={pages.AUTH}>Войти</Link>
                 </SignInButton>
             </SignedOut>
         </>

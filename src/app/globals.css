@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: Multiround;
-  src: url(../../fonts/MultiroundPro.otf);
+  src: url(/MultiroundPro.otf);
 }
 
 body {
@@ -13,11 +13,13 @@ body {
   user-select: none;
 }
 
-.cl-internal-1hp5nqm,
-.cl-internal-lk7758 {
-  display: none;
+.cl-internal-1k7jtru, .cl-internal-15hkgn2 {
+  background: none;
 }
 
+.cl-internal-fcx671, .cl-internal-1j1lborб, .cl-internal-1fpq5at, .cl-internal-ej8kgm {
+  display: none;
+}
 .cl-internal-13hl4in::before {
   content: "";
   display: inline-block;
@@ -30,22 +32,20 @@ body {
   filter: drop-shadow(2px 2px 0.1rem rgba(0, 0, 0, 0.25));
 }
 
-.cl-internal-1k7jtru, .cl-internal-15hkgn2 {
-  background: none;
-}
-
-.cl-internal-fcx671, .cl-internal-1j1lbor {
-  display: none;
-}
-
 .cl-userPreviewSecondaryIdentifier {
   font-size: 12px;
   color: rgb(199, 199, 199);
 }
 
-.cl-formFieldInputGroup,
-.cl-formFieldInput {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+/* Changes for dark mode */
+.bn-container[data-theming-css-variables-demo][data-color-scheme="dark"] {
+  --bn-colors-editor-background: #0a0a0a;
+  --bn-colors-menu-background: #0a0a0a;
+  --bn-colors-disabled-background: #0a0a0a;
+}
+
+.cl-organizationSwitcherPopoverCard {
+  z-index: 999999;
 }
 
 .banner {

@@ -1,7 +1,6 @@
-<img src="src/app/img/QualID.svg" width="400px"/>
+<img src="public/image/logo.svg" width="300px"/>
 
-# **Qual ID** - Единый аккаунт для всех
+# Qual ID
 
-### [id.qual.su](https://id.qual.su)
+[id.qual.su](https://id.qual.su)
 
-© 2021-2025 Qualsu
