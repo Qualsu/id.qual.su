@@ -6,17 +6,20 @@ import { pages } from "@/config/routing/pages.route";
 
 export function Header(){
     return (
-        <div className="py-4 bg-main-dark">
-            <div className="container mx-auto justify-between flex items-center px-5">
-                <Link href={pages.ROOT} className="mx-2">
-                    <h1 className="filter flex items-center">
-                        <Image src={images.LOGO} width="100" height="100" alt="QualID Logo" className="drop-shadow"/>
-                    </h1>
-                </Link>
-                <div className="flex gap-2 mx-2">
-                    <User/>
+        <>
+            <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-3 sm:px-6 md:px-8 lg:px-10">
+                <div className="surface-panel mx-auto flex max-w-[1400px] items-center justify-between rounded-2xl px-4 py-3 sm:px-5 sm:py-4">
+                    <Link href={pages.ROOT} className="mx-2">
+                        <h1 className="filter flex items-center">
+                            <Image src={images.LOGO} width="150" height="100" alt="QualID Logo" className="drop-shadow"/>
+                        </h1>
+                    </Link>
+                    <div className="flex gap-2 mx-2 items-center">
+                        <User/>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </nav>
+            <div className="h-20 md:h-24"/>
+        </>
     )
 }

@@ -14,8 +14,7 @@
     "@clerk/themes": "^2.1.35",
     "next": "14.2.14",
     "react": "^18",
-    "react-dom": "^18",
-    "tailwindcss-animated": "^1.1.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/alpinejs__intersect": "^3.13.4",

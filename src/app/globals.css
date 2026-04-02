@@ -7,10 +7,52 @@
   src: url(/MultiroundPro.otf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #221621;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
   font-family: Multiround;
   user-select: none;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(121, 69, 202, 0.22), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(48, 144, 255, 0.1), transparent 18%),
+    linear-gradient(135deg, rgb(25, 17, 24) 0%, rgb(34, 22, 33) 55%, rgb(19, 14, 21) 100%);
+}
+
+[class^="cl-"], [class*=" cl-"], [data-clerk], .clerk, .clerk-root {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif !important;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(90px);
+  z-index: -1;
+}
+
+body::before {
+  top: 5rem;
+  left: -4rem;
+  width: 14rem;
+  height: 14rem;
+  background: rgba(129, 72, 196, 0.12);
+}
+
+body::after {
+  right: -5rem;
+  bottom: 8rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(33, 181, 255, 0.1);
 }
 
 .cl-internal-1k7jtru, .cl-internal-15hkgn2 {
@@ -50,6 +92,87 @@ body {
 
 .banner {
   filter: drop-shadow(0px 0px 17px #c078ff20);
+}
+
+.surface-panel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(24px);
+}
+
+.section-shell {
+  position: relative;
+  overflow: hidden;
+  margin: 1.5rem 1rem;
+  padding: 1.25rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(24px);
+}
+
+.section-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 35%, transparent 70%, rgba(255, 255, 255, 0.03));
+  pointer-events: none;
+}
+
+.section-heading {
+  font-size: 2.25rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.section-copy {
+  max-width: 36rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    margin: 2rem 1.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  .section-copy {
+    font-size: 1.125rem;
+  }
+
+  .primary-button {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    margin: 2.5rem 2rem;
+    padding: 2rem;
+  }
+
+  .section-heading {
+    font-size: 3.75rem;
+  }
+
+  .section-copy {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-shell {
+    margin: 2.5rem 2.5rem;
+    padding: 2.5rem;
+  }
 }
 
 @layer utilities {
