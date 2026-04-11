@@ -3,28 +3,31 @@ import Image from 'next/image';
 import { images } from '@/config/routing/images.route';
 import { pages } from '@/config/routing/pages.route';
 
-const NotFound = () => {
+export default function NotFound() {
   return (
-        <section className="flex justify-center md:flex-row flex-col items-center h-screen">
-            <title>404 Not found</title>
-            <Image src={images.NOT_FOUND} width="400" height="400" alt="" className="m-2 md:mr-2 flex items-center"/>
-            <div className="text-center md:text-left mx-2 mb-8 ml-0 md:ml-12">
-                <h1 className="text-7xl md:text-8xl my-5 md:my-2">
-                    <span className="text-qual-Q">4</span>
-                    <span className="text-qual-U">0</span>
-                    <span className="text-qual-S">4</span>
-                </h1>
+    <div className="relative isolate flex min-h-screen items-center justify-center text-white">
+        <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(164,93,255,0.16),transparent_55%)]" />
 
-                <h3 className="text-2xl break-word max-w-[500px] text-white px-4 md:px-0">
-                    Страница не найдена
-                </h3>
+        <div className="section-shell mx-4 flex max-w-3xl flex-col items-center gap-6 py-16 text-center sm:mx-6">
+            <div className="pointer-events-none absolute -top-12 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-purple-600/15 blur-3xl" />
 
-                <Link href={pages.ROOT} className="text-gray-300 hover:text-gray-400">
-                    На главную
-                </Link>
-            </div>
-        </section>
+            <Image src={images.NOT_FOUND} width={240} height={240} alt="404 Not Found" className="relative" />
+
+            <div className="flex flex-col gap-4 text-center">
+            <h1 className="relative text-2xl font-semibold text-white sm:text-3xl">
+                Страница не найдена
+            </h1>
+            <p className="relative text-sm text-white/50">
+                Кажется, вы заблудились. Возможно, страница была удалена или переехала
+            </p>
+            <Link
+                href={pages.ROOT}
+                className="primary-button relative px-8 py-3 text-base"
+            >
+                На главную
+            </Link>
+            </div>        
+        </div>
+    </div>
   );
 };
-
-export default NotFound;

@@ -55,6 +55,26 @@ body::after {
   background: rgba(33, 181, 255, 0.1);
 }
 
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 1rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
 .cl-internal-1k7jtru, .cl-internal-15hkgn2 {
   background: none;
 }
@@ -67,7 +87,7 @@ body::after {
   display: inline-block;
   width: 100px;
   height: 50px;
-  background-image: url("https://id.qual.su/_next/static/media/QualID.6000d61a.svg");
+  background-image: url("https://id.qual.su/image/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

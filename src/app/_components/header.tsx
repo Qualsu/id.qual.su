@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/config/routing/images.route";
-import { User } from "./user";
 import { pages } from "@/config/routing/pages.route";
+import { SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 export function Header(){
     return (
@@ -15,7 +15,14 @@ export function Header(){
                         </h1>
                     </Link>
                     <div className="flex gap-2 mx-2 items-center">
-                        <User/>
+                        <UserButton/>
+                        <SignedOut>
+                            <SignInButton>
+                                <Link className="primary-button hover:cursor-pointer" href={pages.AUTH}>
+                                    Войти
+                                </Link>
+                            </SignInButton>
+                        </SignedOut>
                     </div>
                 </div>
             </nav>
