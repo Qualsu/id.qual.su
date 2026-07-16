@@ -12,8 +12,8 @@ export function Footer(){
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <Image src={images.QUALSU} width="120" height="60" alt="Qualsu logo"/>
-                        <span className="text-white">|</span>
-                        <Image src={images.LOGO} width="100" height="25" alt="Qual ID logo"/>
+                        <span className="bg-white/50 h-6 w-0.5"/>
+                        <Image src={images.LOGO} width="120" height="25" alt="Qual ID logo"/>
                     </span>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-300">
                         <li>

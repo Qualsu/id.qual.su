@@ -8,7 +8,7 @@ export function Header(){
     return (
         <>
             <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-3 sm:px-6 md:px-8 lg:px-10">
-                <div className="surface-panel mx-auto flex max-w-[1400px] items-center justify-between rounded-2xl px-4 py-3 sm:px-5 sm:py-4">
+                <div className="surface-panel mx-auto flex max-w-full items-center justify-between rounded-2xl px-4 py-3 sm:px-5 sm:py-4">
                     <Link href={pages.ROOT} className="mx-2">
                         <h1 className="filter flex items-center">
                             <Image src={images.LOGO} width="150" height="100" alt="QualID Logo" className="drop-shadow"/>

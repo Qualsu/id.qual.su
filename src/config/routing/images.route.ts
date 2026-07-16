@@ -1,6 +1,6 @@
 export const images = {
-    QUALSU: "/image/Qualsu-Full.png",
-    QUALSU_Icon: "/image/Qualsu-Icon.png",
+    QUALSU: "/image/logo-qualsu.svg",
+    QUALSU_Icon: "/image/icon-qualsu.png",
     LOGO: "/image/logo.svg",
     BANNER: "/banner.png",
     ID: "/icon/ID.svg",
